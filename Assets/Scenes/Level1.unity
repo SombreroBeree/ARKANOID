@@ -267,7 +267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 339, y: 221}
+  m_AnchoredPosition: {x: 240, y: 218}
   m_SizeDelta: {x: 290.3307, y: 61.7021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445918962
@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 658533052}
   - component: {fileID: 658533051}
   - component: {fileID: 658533053}
+  - component: {fileID: 658533054}
   m_Layer: 5
   m_Name: 'platforma '
   m_TagString: Untagged
@@ -411,7 +412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 339, y: -197}
+  m_AnchoredPosition: {x: 0, y: -201}
   m_SizeDelta: {x: 284.5533, y: 41.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &658533051
@@ -484,7 +485,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 50.890106, y: 0.8858261}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -495,8 +496,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 389.89838, y: 46.197678}
+  m_Size: {x: 286.16888, y: 42.048492}
   m_EdgeRadius: 0
+--- !u!114 &658533054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658533049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f84f29d1fcb8174c98ba228c69ac601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 140
+  maxX: 680
+  screenWidthInUnits: 1000
 --- !u!1 &693829244
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +741,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.48, y: -3.36, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -767,7 +783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35, y: -79}
+  m_AnchoredPosition: {x: -37, y: 11}
   m_SizeDelta: {x: 100, y: 90.6267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163097447
@@ -820,11 +836,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_GravityScale: 100
+  m_Material: {fileID: 6200000, guid: bac2413f17682854f977f80b8e1fd839, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -905,7 +921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.7, y: -0.000013828}
+  m_AnchoredPosition: {x: 87, y: 4}
   m_SizeDelta: {x: 1204, y: 752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351862028
@@ -1231,7 +1247,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755968426}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9e20b12f3640e949a3342e830cc4473, type: 3}
   m_Name: 
@@ -1243,7 +1259,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755968426}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1268,7 +1284,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.7502441, y: -341.80402}
+  m_Offset: {x: 76.41351, y: -341.80402}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1279,7 +1295,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1197.9072, y: 94.67224}
+  m_Size: {x: 2483.526, y: 94.67224}
   m_EdgeRadius: 0
 --- !u!1 &1949052730
 GameObject:
